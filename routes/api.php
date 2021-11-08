@@ -35,5 +35,13 @@ Route::delete('/animals/{id}', [AnimalController::class, 'destroy']);
 
 # route students
 
+# method GET, route/students
 Route::get('/students',[StudentController::class, 'index'] );
+# method POST, route/students
 Route::post('/students', [StudentController::class, 'store']);
+# method GET, route/students
+Route::get('/students/{id}', [StudentController::class, 'show']);
+# method PUT, route/students
+Route::put('/students/{id}', [StudentController::class, 'update']);
+# method DELETE, route/students
+Route::delete('/students/{id}', [StudentController::class, 'destroy']);
